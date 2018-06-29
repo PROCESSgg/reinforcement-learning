@@ -5,6 +5,7 @@ from environment import GraphicDisplay, Env
 
 class PolicyIteration:
     def __init__(self, env):
+#初始化环境，Q值表，策略表，终止点，折扣因子
         self.env = env
         # 2-d list for the value function
         self.value_table = [[0.0] * env.width for _ in range(env.height)]
